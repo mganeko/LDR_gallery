@@ -10,12 +10,23 @@
       width: 320px;
       height: 320px;
     }
+
+    .wrapper {
+      display: grid;
+      grid-template-columns: 340px 340px;
+      column-gap: 4px;
+      row-gap: 4px;
+    }
+
+    .thumb_box {
+      display: inline;
+    }
   </style>
 </head>
 
 <body>
   <h2>LiDAR Gallery v0</h2>
-  <div id="contents">
+  <div id="wrapper">
     <div class="thumb_box">
       <a href="model/bdg_11.usdz" rel="ar">
         <img src="model/bdg_11.png" class="thumb_img" />
@@ -26,17 +37,17 @@
         <img src="model/old_well.png" class="thumb_img" />
       </a>
     </div>
-    <div class="thumb">
+    <div class="thumb_box">
       <a href="model/guardian_dog.usdz" rel="ar">
         <img src="model/guardian_dog.png" class="thumb_img" />
       </a>
     </div>
-    <div class="thumb">
+    <div class="thumb_box">
       <a href="model/tea_room.usdz" rel="ar">
         <img src="model/tea_room.png" class="thumb_img" />
       </a>
     </div>
-    <div class="thumb">
+    <div class="thumb_box">
       <a href="model/ live_painting.usdz" rel="ar">
         <img src="model/live_painting.png" class="thumb_img" />
       </a>
