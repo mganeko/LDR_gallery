@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>LiDAR Gallery v0</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <style>
+    .thumb_img {
+      width: 320px;
+      height: 320px;
+    }
+
+    .wrapper {
+      display: grid;
+      grid-template-columns: 340px 340px;
+      column-gap: 4px;
+      row-gap: 4px;
+    }
+
+    .thumb_box {
+      display: box;
+      position: relative;
+    }
+
+    .ar_button {
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 1;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>LiDAR Gallery v0.2 (with preview)</h2>
+  <div id="wrapper">
+    <div class="thumb_box">
+      <div class="ar_button">
+        <a href="model/bdg_11.usdz" rel="ar">
+          <img src="img/icon_3d.png" width="48px" height="48px" /> </a>
+      </div>
+      <video src="preview/bdg_11.mp4" muted playsinline preload="none" poster="thumb/bdg_11.png" class="thumb_img"
+        onclick="playPreview(this)" />
+    </div>
+    <div class="thumb_box">
+      <div class="ar_button">
+        <a href="model/old_well.usdz" rel="ar">
+          <img src="img/icon_3d.png" width="48px" height="48px" /> </a>
+      </div>
+      <video src="preview/old_well.mp4" muted playsinline preload="none" poster="thumb/old_well.png" class="thumb_img"
+        onclick="playPreview(this)" />
+    </div>
+
+  </div>
+  <div class="thumb_box">
+    <div class="ar_button">
+      <a href="model/guardian_dog.usdz" rel="ar">
+        <img src="img/icon_3d.png" width="48px" height="48px" /> </a>
+    </div>
+    <video src="preview/guardian_dog.mp4" muted playsinline preload="none" poster="thumb/guardian_dog.png"
+      class="thumb_img" onclick="playPreview(this)" />
+  </div>
+  <div class="thumb_box">
+    <div class="ar_button">
+      <a href="model/tea_room.usdz" rel="ar">
+        <img src="img/icon_3d.png" width="48px" height="48px" /> </a>
+    </div>
+    <video src="preview/tea_room.mp4" muted playsinline preload="none" poster="thumb/tea_room.png" class="thumb_img"
+      onclick="playPreview(this)" />
+  </div>
+  <div class="thumb_box">
+    <div class="ar_button">
+      <a href="model/ live_painting.usdz" rel="ar">
+        <img src="img/icon_3d.png" width="48px" height="48px" /> </a>
+    </div>
+    <video src="preview/live_painting.mp4" muted playsinline preload="none" poster="thumb/live_painting.png"
+      class="thumb_img" onclick="playPreview(this)" />
+  </div>
+  </div>
+</body>
+<script>
+  function playPreview(element) {
+    if (element) {
+      element.play().catch(err => console.error(err));
+    }
+    else {
+      console.warn('empty element');
+    }
+  }
+</script>
+
+</html>
