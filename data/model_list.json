@@ -1,0 +1,29 @@
+{
+  "models": [
+    {
+      "modelUrl": "bdg_11.usdz",
+      "thumbUrl": "bdg_11.png",
+      "previewUrl": "bdg_11.mp4"
+    },
+    {
+      "modelUrl": "old_well.usdz",
+      "thumbUrl": "old_well.png",
+      "previewUrl": "old_well.mp4"
+    },
+    {
+      "modelUrl": "guardian_dog.usdz",
+      "thumbUrl": "guardian_dog.png",
+      "previewUrl": "guardian_dog.mp4"
+    },
+    {
+      "modelUrl": "tea_room.usdz",
+      "thumbUrl": "tea_room.png",
+      "previewUrl": "tea_room.mp4"
+    },
+    {
+      "modelUrl": "live_painting.usdz",
+      "thumbUrl": "live_painting.png",
+      "previewUrl": "live_painting.mp4"
+    }
+  ]
+}
